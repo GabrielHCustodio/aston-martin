@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .header {
@@ -12,6 +15,7 @@
     width: 100%;
     height: 50px;
     position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -36,6 +40,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px 0 30px 0;
 }
 
 .car-1 {
@@ -52,4 +61,25 @@
 
 .car-4 {
     background-image: url("/image/vantage-roadster.webp");
+}
+
+.box .name-car {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.box .more {
+    width: 264px;
+    height: 40px;
+    border: none;
+    background-color: rgba(244, 244, 244, 0.65);
+    font-size: 1.5rem;
+    color: #393C41;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.box .more:hover {
+    background-color: rgb(244, 244, 244);
+    color: #000000;
 }
