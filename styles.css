@@ -7,6 +7,10 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+.display-none {
+    display: none;
+}
+
 .header {
     padding: 0 4%;
     display: flex;
@@ -31,55 +35,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-}
-
-.box {
+    background-image: url('./image/green-slate.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+}
+
+.box-left {
+    width: 50%;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 50px 0 30px 0;
+    justify-content: center;
 }
 
-.car-1 {
-    background-image: url("/image/dbs.webp");
+.box-right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.car-2 {
-    background-image: url("/image/valhalla.jpg");
-}
-
-.car-3 {
-    background-image: url("/image/vantage.webp");
-}
-
-.car-4 {
-    background-image: url("/image/vantage-roadster.webp");
-}
-
-.box .name-car {
-    font-size: 4rem;
-    color: #fff;
-}
-
-.box .more {
-    width: 264px;
-    height: 40px;
+.box-right img {
+    width: 90%;
     border: none;
-    background-color: rgba(244, 244, 244, 0.65);
-    font-size: 1.5rem;
-    color: #393C41;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.box .more:hover {
-    background-color: rgb(244, 244, 244);
-    color: #000000;
+    border-radius: 30px;
 }
