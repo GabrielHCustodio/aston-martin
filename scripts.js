@@ -7,7 +7,6 @@ let bds = document.querySelector('#bds')
 
 bds.addEventListener('click', () => {
     window.scrollBy(0, car.getBoundingClientRect().top)
-    document.getElementsByClassName('header').style.color = '#000'
 })
 
 document.querySelector('#valhalla').addEventListener('click', () => {

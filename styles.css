@@ -21,6 +21,8 @@
     position: fixed;
     color: #fff;
     font-size: 1.15rem;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 5;
 }
 
 .logo {
@@ -137,12 +139,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     background-image: url('./image/gray-bg.jpg');
     border-bottom: 2px solid black;
+    position: relative;
+    z-index: 1;
 }
 
 .box-cars .box img {
     width: 70%;
+}
+
+.box-cars .box h1 {
+    position: absolute;
+    top: 50px;
+    font-size: 3rem;
+}
+
+.box-cars .box button {
+    position: absolute;
+    bottom: 50px;
+    width: 14rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #308474;
+    box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.box-cars .box button:hover {
+    background-color: #287062;
 }
